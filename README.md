@@ -36,3 +36,4 @@ root                    (project root folder)
 ## Authors
 ---
 * TODO: Jaxon Vocana jaxonvocana@byui.edu
+        Cameron Lybbert camlybb123@byui.edu

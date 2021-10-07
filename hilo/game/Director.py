@@ -1,7 +1,7 @@
 #imports
 
 class Director:
-    """This class it the director of the game, It will start the game, and end the game.
+    """This class is the director of the game. It will start the game, and end the game.
     
     Modules:
     __init__
@@ -20,6 +20,7 @@ class Director:
         self.card = 0
         self.keep_playing = True
     
+
     def start_game(self):
 
         """This module is used to keep the game going as long as keep_playing is true.
@@ -31,6 +32,7 @@ class Director:
             self.get_score()
             self.do_outputs()
 
+
     def get_input(self):
 
         """This moduel calls the file and class that will, find the card, and the next card
@@ -39,6 +41,7 @@ class Director:
         Self(Director): an instance of the class Director"""
 
         self.classname.findcardfun() #fill in classname with classname, and findcardfun with the function to find the cards
+
 
     def get_score(self):
 
@@ -50,6 +53,7 @@ class Director:
         points = self.classname.fun() #fill in classname with classname, and fun with the function to get points
         self.score += points
 
+
     def do_outputs(self):
 
         """This module will output the card, ask the player for higher or lower, and see if they want to keep playing
@@ -58,8 +62,8 @@ class Director:
         Self(Director): an instance of the class Director"""
 
         print(f"\nThe card is: {self.classname.card}") #classname = classname and card = the card they start with
-        higlow = input("Higher or Lower: [h/l]")
-        self.classname.higherorlowerfun(higlow) #classname = classname and higherorlowerfun = finding if the card is higher or lower.
+        highlow = input("Higher or Lower: [h/l]")
+        self.classname.higherorlowerfun(highlow) #classname = classname and higherorlowerfun = finding if the card is higher or lower.
         print(f"\nThe next card was: {self.classname.nextcard}") #classname = classname and nextcard is the next card.
         print(f"Your score is: {self.score}")
         if self.classname.canplay(): #classname = classname and camplay = the function checking if they can play again

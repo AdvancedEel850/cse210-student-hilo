@@ -62,7 +62,7 @@ class Director:
         self.classname.higherorlowerfun(higlow) #classname = classname and higherorlowerfun = finding if the card is higher or lower.
         print(f"\nThe next card was: {self.classname.nextcard}") #classname = classname and nextcard is the next card.
         print(f"Your score is: {self.score}")
-        if self.classname.canplay: #classname = classname and camplay = the function checking if they can play again
+        if self.classname.canplay(): #classname = classname and camplay = the function checking if they can play again
            choice = input("Keep Playing? [y/n] ")
            self.keep_playing = (choice == 'y')
         else:

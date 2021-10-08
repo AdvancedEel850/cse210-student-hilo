@@ -8,16 +8,21 @@ class Determiner:
         self.next_card_number = []
         self.num_tries = 0
  
-    def can_draw(self):
+    def can_draw(self, points):
  
-        pass
+        if points <= 0:
+            return False
+        else:
+            return True
  
     def get_points(self, highlow):
  
         if highlow == 'h' and self.card_number[0] < self.next_card_number[0]:
             return 100
+        elif highlow == 'l' and self.card_number[0] > self.next_card_number[0]:
+            return 100
         else:
-            return -75
+            return -75 
  
     def card_draw(self):
  

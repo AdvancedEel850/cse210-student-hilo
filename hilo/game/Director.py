@@ -29,7 +29,6 @@ class Director:
         Self(Director): an instance of the class Director"""
         while self.keep_playing:
             self.get_input()
-            self.get_score()
             self.do_outputs()
  
     def get_input(self):
@@ -43,16 +42,7 @@ class Director:
         self.determiner.next_card_draw()
         
         #fill in classname with classname, and findcardfun with the function to find the cards
- 
-    def get_score(self):
- 
-        """This moduel will takes the points from the file and class that will determine if the player was right, and how many points the player wins or loses
-        
-        Args:
-        Self(Director): an instance of the class Director"""
- 
-        points = self.determiner.get_points() #fill in classname with classname, and fun with the function to get points
-        self.score += points
+
  
     def do_outputs(self):
  
@@ -63,7 +53,7 @@ class Director:
  
         print(f"\nThe card is: {self.determiner.card_number}") #classname = classname and card = the card they start with
         highlow = input("Higher or Lower: [h/l]")
-        points = self.determimer.get_points(highlow) #classname = classname and higherorlowerfun = finding if the card is higher or lower.
+        points = self.determiner.get_points(highlow) #classname = classname and higherorlowerfun = finding if the card is higher or lower.
         self.score += points 
         print(f"\nThe next card was: {self.determiner.next_card_number}") #classname = classname and nextcard is the next card.
         print(f"Your score is: {self.score}")

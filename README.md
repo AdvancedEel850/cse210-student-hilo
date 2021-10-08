@@ -38,3 +38,4 @@ root                    (project root folder)
 * TODO: Jaxon Vocana jaxonvocana@byui.edu
         Cameron Lybbert camlybb123@byui.edu
         Olivia Richards ric17035@byui.edu
+        Skyler Tower skylertower@yahoo.com

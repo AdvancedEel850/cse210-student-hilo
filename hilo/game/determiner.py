@@ -12,9 +12,12 @@ class Determiner:
  
         pass
  
-    def get_points(self):
+    def get_points(self, highlow):
  
-        pass
+        if highlow == 'h' and self.card_number[0] < self.next_card_number[0]:
+            return 100
+        else:
+            return -75
  
     def card_draw(self):
  

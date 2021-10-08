@@ -62,8 +62,9 @@ class Director:
         Self(Director): an instance of the class Director"""
  
         print(f"\nThe card is: {self.determiner.card_number}") #classname = classname and card = the card they start with
-        higlow = input("Higher or Lower: [h/l]")
-        self.determimer.higherorlowerfun(higlow) #classname = classname and higherorlowerfun = finding if the card is higher or lower.
+        highlow = input("Higher or Lower: [h/l]")
+        points = self.determimer.get_points(highlow) #classname = classname and higherorlowerfun = finding if the card is higher or lower.
+        self.score += points 
         print(f"\nThe next card was: {self.determiner.next_card_number}") #classname = classname and nextcard is the next card.
         print(f"Your score is: {self.score}")
         if self.determiner.can_draw(): #classname = classname and camplay = the function checking if they can play again

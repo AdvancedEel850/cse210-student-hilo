@@ -27,12 +27,12 @@ class Determiner:
     def card_draw(self):
  
         self.card_number.clear()
-        result = random.randint(1, 14)
+        result = random.randint(1, 13)
         self.card_number.append(result)
  
     def next_card_draw(self):
  
         self.next_card_number.clear()
-        result = random.randint(1, 14)
+        result = random.randint(1, 13)
         self.next_card_number.append(result)
         self.num_tries += 1

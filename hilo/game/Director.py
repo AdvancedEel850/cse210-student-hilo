@@ -10,7 +10,7 @@ class Director:
     do_ouptus
     get_input"""
 
-    def __init__(self) -> None:
+    def __init__(self):
 
         """this class is used to define our variables used in this class of the game.
         args:
